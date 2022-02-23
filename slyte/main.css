@@ -5,3 +5,19 @@
 .pagina1 {
   background-color: #1d75de;
 }
+
+.imagen1 {
+  width: 150px;
+}
+
+body {
+  margin: 0px;
+}
+
+.pagina2 {
+  display: flow-root;
+}
+
+h1 {
+  margin: 0px;
+}
