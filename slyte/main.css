@@ -9,11 +9,11 @@
   width: 100%;
   background-color: black;
   z-index: 999;
-
 }
 
 .main {
   position: relative;
+  top: 65px;
 }
 
 .pagina1 {
@@ -56,4 +56,7 @@ h1 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.pie {
 }
