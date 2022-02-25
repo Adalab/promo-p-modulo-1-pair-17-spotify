@@ -1,10 +1,19 @@
 .encabezado {
-  background: black;
+  width: 100%;
 }
 
 .cabecera {
   display: flex;
+  position: fixed;
   justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  z-index: 999;
+
+}
+
+.main {
+  position: relative;
 }
 
 .pagina1 {
