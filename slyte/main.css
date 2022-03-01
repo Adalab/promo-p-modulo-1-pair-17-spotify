@@ -1,10 +1,5 @@
-body{
-  width: 100%;
-
-}
-
-.encabezado {
-  width: 100%;
+* {
+  margin: 0%;
 }
 
 .menu {
@@ -30,7 +25,7 @@ body{
 
 .imagen1 {
   margin: 10px;
-  width: 150px;
+  width: 9rem;
 }
 
 .icono {
@@ -62,14 +57,14 @@ h3 {
   text-align: center;
   padding: 10px;
   border-radius: 20px;
-  font-size: 7px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .title-politicas {
-  font-size: 0.01px;
+  font-size: 11px;
   padding-bottom: 10px;
 }
 
@@ -81,7 +76,7 @@ h3 {
 }
 
 .description-item {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .imagen-icons {
@@ -95,14 +90,18 @@ h3 {
   /* flex-direction: row; */
 }
 
+.description-p{
+  font-size: 12px;
+}
+
 .pie {
   color: gray;
   background: black;
-  font-size: 9px;
+  font-size: 12px;
   padding: 20px;
-  position: absolute;
+  position: relative;
   bottom: 0;
-  width: 100vw;
+  /* width: 100%; */
 }
 
 .legal,
@@ -112,7 +111,7 @@ h3 {
 
 .bandera {
   width: 30px;
-  margin: 0px 0px 0px 20px
+  margin: 0px 0px 0px 20px;
 }
 
 .pais {
@@ -120,7 +119,6 @@ h3 {
   justify-content: flex-end;
   /* margin-top: 20px; */
   margin-bottom: 10px;
-
 }
 
 .referencias {
@@ -141,7 +139,7 @@ h3 {
 @media all and (min-width: 480px) {
   .pagina1 {
     background: #1d75de url(../images/premium_dancer.png) no-repeat right bottom;
-    background-size: 21rem;
+    background-size: 18rem;
   }
 
   .title2 {
@@ -155,29 +153,40 @@ h3 {
 
   .conteiner {
     display: flex;
+    flex-wrap: wrap;
   }
 
-  .description-icons, .description-item {
+  .description-item {
     /* border: 2px solid saddlebrown; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     justify-items: center;
-    margin: 15px;
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+  }
+
+  .description-icons{
+    width: 44%;
+    justify-content: center;
+    justify-items: center;
+    margin: 5px 5px 10px 5px;
     text-align: center;
   }
 
   .menu {
     color: black;
     display: flex;
-  }
+    align-items: center;
+    /* text-align: justify; */
+    }
 
   .menu-premiun,
   .menu-registrate {
     list-style: none;
     display: flex;
     color: white;
-    font-size: 13px;
+    font-size: 11px;
     padding-inline-start: 0px;
   }
 
@@ -189,10 +198,11 @@ h3 {
     margin: 8px;
   }
 
-  .info-usuarios{
+  .info-usuarios {
     transform: translate(130px, -22px);
     width: 300px;
   }
+
 
 }
 
@@ -201,7 +211,7 @@ h3 {
 @media all and (min-width: 1000px) {
   .pagina1 {
     background: #1d75de url(../images/premium_dancer.png) no-repeat right bottom;
-    background-size: 21rem;
+    background-size: 18rem;
   }
 
   .title2 {
@@ -215,18 +225,19 @@ h3 {
 
   .conteiner {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   .description-icons {
+    display: flex;
+    justify-items: center;
     justify-content: center;
-    align-items: stretch;
+    flex-wrap: wrap;
+
   }
 
-
-  .info-usuarios{
+  .info-usuarios {
     transform: translate(130px, -22px);
     /* margin-right: 0px; */
-
   }
-
 }
