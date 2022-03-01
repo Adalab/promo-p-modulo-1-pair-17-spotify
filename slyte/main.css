@@ -11,16 +11,12 @@
   z-index: 999;
 }
 
-.main {
-  position: relative;
-  top: 65px;
-}
-
 .pagina1 {
   display: flex;
   background-color: #1d75de;
   color: white;
   flex-direction: column;
+  padding: 150px 15px 15px 15px;
 }
 
 .imagen1 {
@@ -30,33 +26,107 @@
 
 .icono {
   width: 30px;
-}
-
-body {
-  margin: 0px;
+  padding: 20px;
 }
 
 .pagina2 {
-  display: flow-root;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 150px ;
 }
 
 h1 {
   margin: 0px;
+  font-size: 40px;
 }
 
-.pie {
-  background: black;
-  color: antiquewhite;
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 .title2 {
-  border: 1px solid green;
-  background: green;
-  margin: 20px;
+  background: #26b758;
+  margin: 50px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 20px;
+  font-size: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-politicas {
+  font-size: 0.01px;
+  padding-bottom: 10px;
+}
+
+.premium {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+.description-item {
+  font-size: 10px;
+}
+
+.imagen-icons {
+  width: 70px;
+  height: 70px;
+  margin: 0 15px 40px 15px;
+}
+
+.description-icons {
+  display: flex;
+  /* flex-direction: row; */
 }
 
 .pie {
+  color: white;
+  background: black;
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  padding-bottom: 20px;
+  font-size: 9px;
+
 }
+
+.pais img {
+  width: 30px;
+}
+
+.pais {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.pie div{
+  padding: 4px;
+}
+
+.referencias {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legal-cookies {
+  display: flex;
+}
+
+.legal-cookies div:first-child {
+  margin-right: 10px;
+}
+
+
+/* Pantalla 480px - 1000px */
+
+/* encima de 1000px */
