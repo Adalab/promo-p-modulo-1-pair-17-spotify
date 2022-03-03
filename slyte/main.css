@@ -1,5 +1,9 @@
-.encabezado {
-  width: 100%;
+* {
+  margin: 0%;
+}
+
+.menu {
+  display: none;
 }
 
 .cabecera {
@@ -13,8 +17,8 @@
 
 .pagina1 {
   display: flex;
-  background-color: #1d75de;
   color: white;
+  background: #1d75de;
   flex-direction: column;
   padding: 150px 15px 15px 15px;
 }
@@ -32,7 +36,6 @@
 .pagina2 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 150px ;
 }
 
 h1 {
@@ -52,8 +55,7 @@ h3 {
   background: #26b758;
   margin: 50px;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   border-radius: 20px;
   font-size: 12px;
   display: flex;
@@ -78,8 +80,8 @@ h3 {
 }
 
 .imagen-icons {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   margin: 0 15px 40px 15px;
 }
 
@@ -93,28 +95,30 @@ h3 {
 }
 
 .pie {
-  color: white;
+  color: gray;
   background: black;
-  bottom: 0px;
-  width: 100%;
-  position: fixed;
-  padding-bottom: 20px;
-  font-size: 9px;
-
+  font-size: 12px;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  /* width: 100%; */
 }
 
-.pais img {
+.legal,
+.cookies {
+  padding: 10px;
+}
+
+.bandera {
   width: 30px;
+  margin: 0px 0px 0px 20px;
 }
 
 .pais {
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px;
-}
-
-.pie div{
-  padding: 4px;
+  /* margin-top: 20px; */
+  margin-bottom: 10px;
 }
 
 .referencias {
@@ -126,3 +130,114 @@ h3 {
   display: flex;
 }
 
+/* .info-usuarios{
+  width: 200px;
+} */
+
+/* Pantalla 480px - 1000px */
+
+@media all and (min-width: 480px) {
+  .pagina1 {
+    background: #1d75de url(../images/premium_dancer.png) no-repeat right bottom;
+    background-size: 18rem;
+  }
+
+  .title2 {
+    width: 200px;
+    margin: 50px 50px 50px 0px;
+  }
+
+  .cabecera > .icono {
+    display: none;
+  }
+
+  .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .description-item {
+    /* border: 2px solid saddlebrown; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+  }
+
+  .description-icons{
+    width: 44%;
+    justify-content: center;
+    justify-items: center;
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+  }
+
+  .menu {
+    color: black;
+    display: flex;
+    align-items: center;
+    /* text-align: justify; */
+    }
+
+  .menu-premiun,
+  .menu-registrate {
+    list-style: none;
+    display: flex;
+    color: white;
+    font-size: 11px;
+    padding-inline-start: 0px;
+  }
+
+  .menu-registrate {
+    border-left: 2px solid white;
+  }
+
+  .li {
+    margin: 8px;
+  }
+
+  .info-usuarios {
+    transform: translate(130px, -22px);
+    width: 300px;
+  }
+
+
+}
+
+/* encima de 1000px */
+
+@media all and (min-width: 1000px) {
+  .pagina1 {
+    background: #1d75de url(../images/premium_dancer.png) no-repeat right bottom;
+    background-size: 18rem;
+  }
+
+  .title2 {
+    width: 200px;
+    margin: 50px 50px 50px 0px;
+  }
+
+  .cabecera > .icono {
+    display: none;
+  }
+
+  .conteiner {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .description-icons {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  .info-usuarios {
+    transform: translate(130px, -22px);
+    /* margin-right: 0px; */
+  }
+}
